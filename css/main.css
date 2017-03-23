@@ -8,10 +8,6 @@ body{
     font-size: 14px;
     background-color: #fbfbfb;
     color: #323232;
-    width: 100%;
-    padding: 0;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 section { padding: 55px 0px 50px}
 img {
@@ -267,7 +263,7 @@ header .hamburger_btn span:nth-child(3) {
 .scroll-downs {
 	position: absolute;
     right: 0;
-    bottom: -130px;
+    bottom: -120px;
     left: 0;
     margin: auto;
     
@@ -299,40 +295,99 @@ header .hamburger_btn span:nth-child(3) {
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(15px); opacity: 0;}
-}top
+}
 
 
 /*================
     About
 ================*/
-.main_about_area div.head_title:nth-child(2) {
-	padding: 80px 0px;
+.main_about_area  .basic-info .person-title{
+	margin-bottom:15px;
 }
-.main_about_area .head_title_2 h3:before{
-	margin-top: 16px;
-    left: 40%;
+.main_about_area  .basic-info .bio-text{
+    font-weight: 500;
+    line-height: 24px;
+    color: #646464;
 }
-.main_about_area .head_title_2 h3:after {
-    margin-top: -13px;
-    right: 40%;
+.main_about_area  .basic-info .info-list{}
+.main_about_area .basic-info .info-list li{
+	color:#646464;
+	font-weight:700;
 }
-.main_about_area p {
+.main_about_area  .basic-info .info-list li i{
+	font-size: 24px;
+	position: relative;
+	top: 5px;
+	margin-right:7px;
+	line-height: 37px;
+}
+
+.about_photo{
+	padding-top:0px;
+	text-align:center;
+}
+.about_photo img {
+	width: 300px;
+}
+.main_about_area .skills-info .title{
+	margin-bottom:15px;
+}
+.main_about_area .skills-info .skill-text{
+	margin-bottom:25px;
+}
+.main_about_area .skills-info .progress-bar-area{}
+.main_about_area .skills-info .single-bar{
+	margin-bottom:20px;
+}
+.main_about_area .skills-info .single-bar span{
+	color:#282528;
+}
+.main_about_area .skills-info .single-bar .skill-info{
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.main_about_area .skills-info .single-bar .skill-title{
+	float:left;
+}
+.main_about_area .skills-info .single-bar .skill-percent{
+	float:right;
+}
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
     text-align: center;
-    color: #808080;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
 }
-.main_about_area .head_title_2 {
-	padding-top: 40px;
+.main_about_area .skills-info .single-bar .progress{
+	height:6px;
+	box-shadow:inset 0 1px 2px rgba(0,0,0,.0);
+	-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.0);
+	-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.0);
+	margin-bottom:0px;
 }
-.wrap_skill {
-	
+.main_about_area .skills-info .single-bar .progress .progress-bar{
+	border-top-right-radius:20px;
+	-moz-border-top-right-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	-moz-border-bottom-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
 }
-
-@media (min-width: 1200px) {
-    #about .container {
-	    max-width: 800px;
-    }
+.main_about_area .skills-info .single-bar .progress {
+    border: 1px solid #FEA60E;
 }
-
+.main_about_area .skills-info .single-bar .progress .progress-bar {
+    background: #FEA60E;
+}
 /*================
     Responsive
 ================*/
