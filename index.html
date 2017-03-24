@@ -6,50 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/logo_tab.png">
     <title>KalTem | Ekal Template theme by Bootstrap</title>
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/linea.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
     
 <body>
-	<header>
-		<div class="collapse" id="navigation">
-			<div class="bg-inverse">
-				<div class="container">
-					<nav class="navbar">
-						<ul class="nav nav-inline text-xs-center">
-							<li class="nav-item"><a href="#about">About</a></li>
-							<li class="nav-item"><a href="#service">Service</a></li>
-							<li class="nav-item"><a href="#work">Work</li>
-							<li class="nav-item"><a href="#blog">Blog</a></li>
-							<li class="nav-item"><a href="#contact">Contact</a></li>
-						</ul>
-					</nav>
+    <header id="home" class="site-header">
+        <div class="header-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <!-- START LOGO DESIGN AREA -->
+                        <div class="nav-logo-wrap">
+					        <a href="#home" class="logo smoth-scroll">
+						    <img id="logo-dark" src="img/logo_white.png" class="wow pulse infinite" data-wow-delay="0.1s" data-wow-duration="2.3s" >
+    						<img id="logo-white" src="img/logo.png">
+					</a>
 				</div>
-			</div>
-		</div>
-		<nav class="navbar menu">
-			<div class="container">
-					<a class="navbar-brand pull-xs-left" href="#home"><img src="img/logo.png" class="img-responsive" alt="Logo Navitgation" /></a>
-					<button class="navbar-toggler collapsed pull-xs-right" type="button" data-toggle="collapse" data-target="#navigation">
-						<div class="hamburger_btn">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-					</button>
-			</div>
-		</nav>
-	</header>
-   
-   <section class="home">
+                        <!-- END LOGO DESIGN AREA -->
+                    </div>
+                    <div class="col-sm-9">
+                        <!-- START MENU DESIGN AREA -->
+                        <div class="mainmenu">
+                            <div class="navbar navbar-nobg">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="nav-toggle hidden-xs">
+                                    <button class="toggle-btn">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active"><a class="smoth-scroll" href="#about">About</a>
+                                        </li>
+                                        <li><a class="smoth-scroll" href="#service">Service</a>
+                                        </li>
+                                        <li><a class="smoth-scroll" href="#portfolio">Portfolio</a>
+                                        </li>
+                                        </li>
+                                        <li><a class="smoth-scroll" href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MENU DESIGN AREA -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+  
+   <section id="home" class="home">
 		<div class="container">
 		    <div class="main_home_area">
 		        <h1>I am <span class="orange-text">R. Haekal</span></h1>
@@ -60,9 +87,9 @@
 		            <li><a href="https://www.linkedin.com/in/rahmandika-haekal-537b54120/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 		            <li><a href="https://www.behance.net/rahmandika7cfd" target="_blank"><i class="fa fa-behance"></i></a></li>
 		        </ul>
-		        <a href="#about" class="btn-kaltem">About Me</a>
-                <div class="scroll-downs">
-                    <a href="#about" class="scroll-downs">
+		        <a href="#about" class="btn-kaltem smoth-scroll">About Me</a>
+                <div class="scroll-downs wow zoomIn" data-wow-delay="0.7s" data-wow-duration="1s">
+                    <a href="#about" class="smoth-scroll scroll-downs">
                         <div class="mousey">
                             <div class="scroller">
                             </div>
@@ -75,12 +102,12 @@
    
     <section id="about" class="about">
         <div class="container">
-            <div class="head_title text-md-center text-xs-center">
-                <h2 class="line-title">About <span class="orange-text">Me</span></h2>
+            <div class="head_title text-center text-center">
+                <h2 class="line-title wow ">About <span class="orange-text">Me</span></h2>
             </div>                
             <div class="main_about_area">
                 <div class="row">
-                    <div class="col-md-4 basic-info">
+                    <div class="col-md-4 basic-info wow fadeInLeft" data-wow-delay="0.2s">
                         <h4 class="person-title">R. Haekal</h4>
                         <p class="bio-text">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit .<br>Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
@@ -92,10 +119,10 @@
                             <li><i class="pe-7s-global"></i><a href="http://github.com/rahmandikahaekal" target="_blank">http://github.com/rahmandikahaekal</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4 about_photo">
+                    <div class="col-md-4 about_photo wow fadeInUp" data-wow-delay="0.8s">
                        <img src="img/author.jpg" alt="about photo" class="img-responsive" />
                     </div>
-                    <div class="col-md-4 skills-info">
+                    <div class="col-md-4 skills-info wow fadeInRight" data-wow-delay="1.2s">
 						<h4 class="title">My Professional Skills</h4>
 						<p class="skill-text">
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -108,7 +135,7 @@
 									<span class="skill-percent">90%</span><!--Skills Percentage-->
 								</div>
 								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 60%;background: #FEA60E;"></div>
+									<div class="progress-bar" role="progressbar" style="width: 90%;background: #FEA60E;"></div>
 								</div>	
 							</div>
 							<!--Single Skills Bar-->
@@ -144,6 +171,14 @@
 						</div>
 					</div>
                 </div>
+                <div class="about_experience text-center">
+                    <ul>
+                        <li><span>40</span>Clients</li>
+                        <li><span data-icon="u" class="icon"></span>Freelancer</li>
+                        <li><span>63</span>Projects</li>
+                        <li><span data-icon="4" class="icon"></span>Developer</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -153,32 +188,14 @@
         <div id='gmap_canvas' style='height:400px;width:auto;'></div>
     </section>
     
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-12">
-                    <ul class="list-unstyled social text-xs-center text-md-center">
-                        <li class="list-inline-item"><a href="#" class="fa fa-facebook"></a></li>
-                        <li class="list-inline-item"><a href="#" class="fa fa-twitter"></a></li>
-                        <li class="list-inline-item"><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-md-12">
-                    <div class="copyrights text-xs-center text-md-center">@2015 Dali all rights reserved. designed & coded by 
-                        <a href="#">Pixelhint.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     
-    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.nav-custom.js"></script>
-    <script src="js/main.js"></script>
-<!--
+    <script src="js/wow.js"></script>
+    
+    
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCUXQSyROPkaH1LzUV-djGonohv0cceFUk&callback=initMap'></script>
     <script type='text/javascript'>
         function init_map(){
@@ -201,6 +218,6 @@
             position: new google.maps.LatLng(-7.0311978,109.6098514)});
             
             var infowindow = new google.maps.InfoWindow({content:'<strong>Pondok Programmer</strong><br>Jl. Raya Karanganyar No.17, Kulu, Kec. Karanganyar, Pekalongan, Jawa Tengah 51182<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
--->
+    <script src="js/main.js"></script>
 </body>    
 </html>
