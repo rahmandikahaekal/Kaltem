@@ -3,7 +3,6 @@
 ====================*/
 html,
 body{
-    position: relative;
     font-family: 'Lato','Open Sans',sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -79,25 +78,58 @@ h3 {
 }
 
 /* Custom Class */
+.head_title {
+	padding-bottom: 30px;
+}
+
+.yellow-bg {
+    background-color: #ffad2d;
+}
+.gray-bg {
+    background-color: #fbfbfb;
+}
+.white-bg {
+    background-color: #fff;
+}
 .orange-text { color: #fea60e }
+
+
 .bg-overlay {
     backResponsiveground: rgba(0, 0, 0, 0.6);
     width: 100%;
     top: 0;
     left: 0;
 }
-.btn-kaltem {
+.btn-orange {
     font-family: 'Open Sans',sans-serif;
     font-weight: 600;
     font-size: 11px;
-	background-color: #fea60e;
-    color: #fff;
     padding: 7px 20px;
+    background-color: #fea60f;
+    color: #fff;
     text-transform: uppercase;
 }
-.head_title {
-	padding-bottom: 30px;
+.btn-orange:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease-in-out 0s;
 }
+.btn-white {
+	font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 7px 18px;
+    background-color: #ffffff;
+    color: #666666;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.47);
+    text-transform: uppercase;
+}
+.btn-white:hover {
+	background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease-in-out 0s;
+}
+
 /*====================
     Custom Navbar
 ====================*/
@@ -335,15 +367,9 @@ h3 {
     font-size: 20px;
     color: #666566;
 }
-.main_home_area .btn-kaltem {
+.main_home_area .btn-orange {
 	position: relative;
-    top: 12px;
-}
-.main_home_area .btn-kaltem:hover,
-.main_home_area .btn-kaltem:focus {
-    background-color: #000;
-    color: #fff;
-    transition: all 0.5s ease-in-out 0s;
+    top: 14px;
 }
 .scroll-downs {
 	position: absolute;
@@ -496,4 +522,102 @@ h3 {
     font-weight: 300;
 	font-size: 60px;
     display: block;
+    color: #000;
+}
+
+/*================
+    Label
+================*/
+.main_label_area {
+    color: #fff;
+	padding: 40px 0;
+}
+.main_label_area span {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+    padding-right: 30px;
+    text-transform: capitalize;
+}
+.main_label_area .btn-white {
+    position: relative;
+    top: -5px;
+}
+
+/*================
+    Service
+================*/
+.service {
+    background-color: #fff;
+}
+.main_service_area {
+	padding: 0px 160px ;
+}
+.main_service_area .col-md-6:nth-child(1) {
+    border-right: 2.15px solid #ad8c8c;
+    padding-right: 0;
+}
+.main_service_area .col-md-6:nth-child(2) {
+	padding-left: 0;
+}
+.main_service_area .col-md-6 .service_line {
+	border-top: 2.15px solid #ad8c8c;
+}
+.main_service_area .col-md-6 .service_col {
+	padding: 40px;
+}
+.main_service_area .col-md-6:nth-child(1) .service_col:nth-child(2) .service_icon span.icon:before {
+    font-family: "linea-software-10" !important;
+}
+.main_service_area .col-md-6:nth-child(2) .service_col:nth-child(2) .service_icon span.icon:before {
+    font-family: "linea-ecommerce-10" !important;
+}
+.main_service_area .col-md-6 .service_icon span {
+    font-size: 4em;
+    color: #666;
+}
+.main_service_area .col-md-6 .service_desc h4 {
+    font-size: 20px;
+    color: #000;
+}
+.main_service_area .col-md-6 .service_desc p {
+    font-size: 10x
+    color: #666;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 991px) {
+    .main_service_area  {
+        padding: 0 70px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .main_service_area {
+        padding: 0px ;
+    }
+    .main_service_area .col-md-6 .service_col {
+        padding: 29px;
+    }
+}
+
+/*================
+    Portfolio
+================*/
+.portfolio .line-title:before {
+    border-top: 3px solid #808080;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 34%;
+    margin-top: 20px;
+    width: 50px;
+}
+.portfolio .line-title:after {
+    border-bottom: 3px solid #808080;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 34%;
+    margin-top: -20px;
+    width: 50px;
 }
