@@ -8,6 +8,19 @@ new WOW().init();
     
     jQuery(document).ready(function () {
         
+        //Carousel 
+        var testimonial = $("#client-testimonial #owl-demo-testimonial");
+
+        testimonial.owlCarousel({
+            items: 1, //1 item above 1000px browser width
+            itemsDesktop: [1000, 1], //1 item between 1000px and 901px
+            itemsDesktopSmall: [900, 1], //1 item betweem 900px and 601px
+            itemsTablet: [600, 1], //1 item between 600 and 0
+            itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+            autoPlay: 6000,
+            pauseOnHover: true
+        });
+        
         //Menu JS
         $(".toggle-btn").on("click", function () {
             $(this).toggleClass("active");
@@ -36,34 +49,16 @@ new WOW().init();
             e.preventDefault();
         });
         
-        //Magnific Popup
-        var magnifPopup = function () {
-            $('.work-popup').magnificPopup({
-                type: 'image',
-                removalDelay: 300,
-                mainClass: 'mfp-with-zoom',
-                gallery: {
-                    enabled: true
-                },
-                zoom: {
-                    enabled: true, // By default it's false, so don't forget to enable it
+        //Mixitup
+        var portfolioContent = $('.portfolio');
 
-                    duration: 300, // duration of the effect, in milliseconds
-                    easing: 'ease-in-out', // CSS transition easing function
-
-                    // The "opener" function should return the element from which popup will be zoomed in
-                    // and to which popup will be scaled down
-                    // By defailt it looks for an image tag:
-                    opener: function (openerElement) {
-                        // openerElement is the element on which popup was initialized, in this case its <a> tag
-                        // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-                        return openerElement.is('img') ? openerElement : openerElement.find('img');
-                    }
-                }
-            });
-        };
-        // Call the functions 
-        magnifPopup();
+        portfolioContent.mixItUp();
+        
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            showImageNumberLabel: false,
+        });
         
         //Extra JS
         $(document).on('click', '.navbar-collapse.in', function (e) {
