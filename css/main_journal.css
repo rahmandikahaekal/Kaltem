@@ -271,7 +271,103 @@ h3 {
 }
 .main_home_area {
     position: relative;
-    top: 115px;
+    top: 130px;
     text-align: center;
     z-index: 9999;
+}
+
+/*====================  
+    Blog
+====================*/
+.main_blog_area {
+    padding: 35px 0px;
+}
+.blog_item {
+    padding-bottom: 40px;
+}
+.blog .blog_area .blog_item:nth-child(1) .blog_img {
+    background-image: url('../img/journal/journal_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.blog .blog_area .blog_item:nth-child(2) .blog_img {
+    background-image: url('../img/journal/journal_2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.blog .blog_area .blog_item:nth-child(3) .blog_img {
+    background-image: url('../img/journal/journal_3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.blog .blog_area .blog_item:nth-child(4) .blog_img {
+    background-image: url('../img/journal/journal_4.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.blog_desc {
+    padding-top: 10px;
+}
+.blog_desc ul li {
+    display: inline-block;
+    color: #666;
+    padding: 5px 10px 7px 0px;
+}
+.blog_detail h4 {
+    font-size: 18px;
+    color: #000;
+}
+.blog_detail p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666566;
+}
+.blog_detail a {
+    color: #fea60e;
+    text-transform: uppercase;
+}
+.blog_detail a:after {
+    border-top: 1px solid #fea60e;
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    right: -8px;
+    width: 40px;
+}
+
+/*================
+    Footer
+================*/
+footer {
+    background-color: #333333;
+    color: #EEE;
+}
+footer#footer.footer section {
+    padding: 60px 0px;
+}
+.social_link  ul li{
+	display: inline-block;
+    padding: 0px 5px;
+}
+.social_link ul li i {
+    font-size: 20px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    padding: 6px;
+    color: #eee;
+}
+.social_link ul li:nth-child(1) i {
+    padding: 6px 10px;
+}
+.social_link ul li:nth-child(3) i {
+    padding: 6px 9px;
 }
