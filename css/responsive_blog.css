@@ -1,0 +1,59 @@
+/* Navigation Bar*/
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .mainmenu .navbar-nav li a {
+        padding: 30px 11px;
+        font-size: 12px;
+    }
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 20px 11px;
+        font-size: 12px;
+    }
+    .nav-logo-wrap .logo img {
+	    width: 70%;
+        
+    }
+}
+@media only screen and (max-width: 767px) {
+    .site-header .navbar-collapse {
+        opacity: 1;
+        visibility: visible;
+    }
+    .navbar-toggle .icon-bar {
+        background: #FFCB2F;
+    }
+    .menu-bg .navbar-toggle .icon-bar {
+        background: #FFCB2F;
+    }
+    .navbar-toggle {
+        margin-right: 0px;
+        margin-top: -30px;
+    }
+    .navbar {
+        min-height: 0px;
+    }
+    .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+    .mainmenu .navbar-nav li a:hover {
+        color: #FFCB2F;
+    }
+    .menu-bg .mainmenu .navbar-nav li a:hover {
+        color: #FFCB2F;
+    }
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 420px;
+    }
+    .navbar-toggle {
+        margin-top: -53px;
+    }
+    .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+    }
+    .menu-bg .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+    }
+}
