@@ -59,6 +59,7 @@
 }
 
 @media only screen and (max-width: 767px) {
+/*
     .navbar-toggle {
         margin-top: -55px;
     }
@@ -66,6 +67,7 @@
         padding-top: 8px;
         width: 28%;
     }
+*/
 
     .main_service_area  {
         padding: 0 70px;
@@ -85,7 +87,7 @@
     .main_service_area .col-md-6 .service_col {
         padding: 29px;
     }
-    .blog .main_blog_area .col-sm-12 {
+    .blog .main_blog_area .blog_col {
 	    padding-bottom: 30px;
     }
 }
@@ -96,6 +98,9 @@
     .main_service_area .col-md-6:nth-child(1) {
         border-right: none;
         padding-right: 15px;
+    }
+    .blog .main_blog_area .blog_col {
+        padding-bottom: 30px;
     }
 }
 
