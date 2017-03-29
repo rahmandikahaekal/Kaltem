@@ -57,3 +57,40 @@
         background: rgba(0, 0, 0, .9);
     }
 }
+
+@media (min-width: 768px) {
+    .blog_history .input-group a {
+        padding: 7px 4px;
+    }
+    .desc_area p:nth-child(1) {
+        padding-top: 13px;
+    }
+    .instagram .no-padding-left,
+    .instagram .no-padding-right {
+	    padding-left: 0;
+        padding-right: 0;
+    }
+    .subscribe #form-buscar a {
+        font-weight: 700;
+        font-size: 12px;
+        padding: 17px 18px;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .desc_area p:nth-child(1) {
+	    padding-top: 13px;
+    }
+    .instagram .no-padding-left,
+    .instagram .no-padding-right {
+	    padding-left: 0;
+        padding-right: 0;
+    }
+    .subscribe #form-buscar a {
+        font-weight: 700;
+        font-size: 12px;
+        padding: 17px 14px;
+        border-radius: 0;
+    }
+}
