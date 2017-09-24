@@ -13,5 +13,6 @@ Kaltem Company Profile portfolio template. This's easy to modify, all the layers
 - Open Sans https://fonts.google.com/specimen/Open+Sans
 
 ### Image Used
+- Freepik https://www.freepik.com/
 - Pexels https://www.pexels.com/
 - Shutterstock https://www.shutterstock.com/home
